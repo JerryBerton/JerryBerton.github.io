@@ -1,0 +1,29 @@
+{
+    "avatar": "http://p59e3imn2.bkt.clouddn.com/avatar.jpeg",
+    "name": "JerryBerton",
+	"tag": "Web前端/Node/技术宅",
+    "desc": "不要拿着别人的地图寻找自己的道路",
+    "skills": {
+		"Javascript": 8,
+		"React": 8,
+		"Redux": 8,
+		"Webpack": 8,
+		"Node": 7
+    },
+    "projects": [{
+		"name": "react-dragart",
+		"image": "https://d13yacurqjgara.cloudfront.net/users/138819/screenshots/2578899/dribbble_800x600_01_1x.png",
+		"tags": ["2018年", "项目标签"],
+		"description": "基于react的拖拽组件库",
+		"link_text": "DEMO地址",
+		"link": "http://www.jerryberton.cn/react-dragart/"
+	}, {
+		"name": "react组件库",
+		"image": "https://d13yacurqjgara.cloudfront.net/users/4094/screenshots/2578885/time-lords-drib_1x.jpg",
+		"description": "基于react开发的公司需求的组件库",
+		"tags": ["Github", "设计"],
+		"link_text": "文档地址",
+		"link": "http://www.jerryberton.cn/dh-component/"
+	}],
+	"reward": null
+}

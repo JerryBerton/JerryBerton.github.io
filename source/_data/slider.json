@@ -1,0 +1,19 @@
+[{
+    "image": "http://p59e3imn2.bkt.clouddn.com/WechatIMG1.jpeg",
+    "align": "center",
+    "title": "最美的夜晚",
+    "subtitle": "夕阳红",
+	"link": null
+}, {
+    "image": "http://p59e3imn2.bkt.clouddn.com/WechatIMG2.jpeg",
+    "align": "left",
+    "title": "Left Aligned Caption",
+    "subtitle": "Here's our small slogan.",
+	"link": null
+}, {
+    "image": "http://p59e3imn2.bkt.clouddn.com/WechatIMG3.jpeg",
+    "align": "right",
+    "title": "宝马I8",
+    "subtitle": "我要努力买的车",
+	"link": null
+}]

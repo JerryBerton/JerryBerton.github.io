@@ -1,0 +1,11 @@
+{
+    "social": {
+        "weibo": "https://weibo.com/p/1005052642072851?is_all=1",
+        "github": "https://github.com/JerryBerton",
+		"rss": "/atom.xml"
+    },
+    "extern": {
+	    "React技术社区": "https://github.com/JerryBerton",
+		"Github地址": "https://github.com/JerryBerton"
+    }
+}
