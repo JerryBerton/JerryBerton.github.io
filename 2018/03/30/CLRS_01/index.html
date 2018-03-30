@@ -7,13 +7,20 @@
 
     
 
-    <title>归档 | 王敬博的个人博客</title>
+    <title>《算法巩固》学习第一天 | 王敬博的个人博客</title>
     <meta name="author" content="JerryBerton">
+    
+    <meta name="description" content="自己走在前端的茫茫人海中已经两年多了， 最近发现自己算法功底不是很好，就听从高人指点迷津开始算法巩固大学基础的第一天
+
+题目  给定一个整数数列，找出其中和为特定值的那两个数。你可以假设每个输入都只会有一种答案，同样的元素不能被重用。
+  实例：
+
+给定 nums = [2, 7, 11, 15],">
     
     
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
 
-    
+    <meta property="og:title" content="《算法巩固》学习第一天"/>
     <meta property="og:site_name" content="JerryBerton"/>
 
     
@@ -191,46 +198,83 @@
 
     <main>
         <div class="container main-container">
-    
-
-<nav class="page-nav hide-on-small-only">
+    <nav class="page-nav hide-on-small-only">
     <div class="nav-wrapper green">
-        <span class="breadcrumb">当前位置（归档）</span>
+        <span class="breadcrumb">当前位置（分类目录）</span>
+        
+            
+
         
 
         
     </div>
 </nav>
 
+<article>
+    <div class="card">
+        <div class="card-content">
+            
+
+            <div class="article-title">
+                
+    
+        <h1>《算法巩固》学习第一天</h1>
+    
 
 
-    <ul class="collapsible mt-0" data-collapsible="accordion">
+            </div>
+            <time class="pink-link-context" datetime="2018-03-30T09:14:53.000Z"><a href="/2018/03/30/CLRS_01/">2018-03-30</a></time>
+
+            <span id="busuanzi_container_page_pv" class="read-times-container">
+    <i class="fa fa-eye"></i>
+    <span id="busuanzi_value_page_pv"></span>
+</span>
+
+            
+    <div class="tags-row">
         
+            <a href="/tags/算法/" class="chip pink lighten-1">算法</a>
         
-            <li>
-                <div class="collapsible-header active">
-                    <i class="fa fa-archive"></i>2018
-                </div>
-                <div class="collapsible-body">
-                    <div class="collection">
-                        
-                            <a href="/2018/03/30/CLRS_01/" class="collection-item grey-text text-darken-1">
-                                <time datetime="2018-03-30T09:14:53.000Z">2018-03-30</time>
-                                <span>&nbsp;&nbsp;&nbsp;</span>
-                                《算法巩固》学习第一天
-                            </a>
-                        
-                            <a href="/2018/03/08/hello-world/" class="collection-item grey-text text-darken-1">
-                                <time datetime="2018-03-08T05:52:56.000Z">2018-03-08</time>
-                                <span>&nbsp;&nbsp;&nbsp;</span>
-                                Hello World
-                            </a>
-                        
-                    </div>
-                </div>
-            </li>
-        
-    </ul>
+    </div>
+
+
+            <div class="toc pink-link-context hide-on-med-and-down">
+    
+</div>
+
+
+            <div class="entry pink-link-context">
+                <p>自己走在前端的茫茫人海中已经两年多了， 最近发现自己算法功底不是很好，就听从高人指点迷津开始算法巩固大学基础的第一天</p>
+<ul>
+<li><p>题目<br>  给定一个整数数列，找出其中和为特定值的那两个数。你可以假设每个输入都只会有一种答案，同样的元素不能被重用。</p>
+<p>  实例：</p>
+<blockquote>
+<p>给定 nums = [2, 7, 11, 15], target = 9<br>因为 nums[0] + nums[1] = 2 + 7 = 9<br>所以返回 [0, 1]</p>
+</blockquote>
+</li>
+<li><p>普通的方案 (1)</p>
+</li>
+</ul>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">/**</span></span><br><span class="line"><span class="comment">* @param &#123;number[]&#125; nums</span></span><br><span class="line"><span class="comment">* @param &#123;number&#125; target</span></span><br><span class="line"><span class="comment">* @return &#123;number[]&#125;</span></span><br><span class="line"><span class="comment">*/</span></span><br><span class="line"><span class="keyword">var</span> twoSum = <span class="function"><span class="keyword">function</span>(<span class="params">nums, target</span>) </span>&#123;</span><br><span class="line"><span class="keyword">let</span> result = [];</span><br><span class="line">	<span class="keyword">for</span> (<span class="keyword">var</span> i = <span class="number">0</span>; i &lt; nums.length; i++) &#123;</span><br><span class="line">		<span class="keyword">for</span> (<span class="keyword">var</span> j = <span class="number">0</span>; j &lt; nums.length; j++) &#123;</span><br><span class="line">			<span class="keyword">if</span> (i !== j) &#123;</span><br><span class="line">				<span class="keyword">if</span> (nums[i] + nums[j] === target) &#123;</span><br><span class="line">					test = [j, i]</span><br><span class="line">				&#125;</span><br><span class="line">			&#125;</span><br><span class="line">		&#125;</span><br><span class="line">	&#125;</span><br><span class="line">	<span class="keyword">return</span> test</span><br><span class="line">&#125;;</span><br></pre></td></tr></table></figure>
+                
+
+
+<p class="pink-link-context">
+    <a href="/2018/03/08/hello-world/" rel="next" title="Hello World">
+    下一篇：Hello World
+  </a>
+</p>
+
+
+            </div>
+			
+        </div>
+    </div>
+</article>
+
+
+
+
 
 
 </div>
