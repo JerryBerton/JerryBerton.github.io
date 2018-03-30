@@ -37,3 +37,21 @@ tags: 算法
 		return test
 	};
 ```
+* 精简方案
+```javascript
+	/**
+	* @param {number[]} nums
+	* @param {number} target
+	* @return {number[]}
+	*/
+	var twoSum = function(nums, target) {
+		var result = [];
+		nums.reduce(function(last, current, idx, array) {
+			if (array[last] + current === target) {
+				result = [last, idx]
+			}
+			return idx
+		}, 0)
+		return result
+	};
+```
